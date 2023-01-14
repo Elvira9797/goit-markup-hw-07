@@ -18,10 +18,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Header -->
+
     <header class="header-page">
-      <div class="container main-nav">
+      <div class="container header-container">
         <nav class="main-nav">
-          <a href="./index.html" class="logo"><span>web</span>studio</a>
+          <a href="./index.html" class="logo link"><span>web</span>studio</a>
           <ul class="site-nav list">
             <li class="list-item">
               <a href="./index.html" class="header-link link">Studio</a>
@@ -36,19 +38,117 @@
             </li>
           </ul>
         </nav>
-
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="menu-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
         <ul class="contacts list">
-          <li class="list-item">
+          <li class="contacts-item">
             <a href="mailto:info@devstudio.com" class="contacts-link link">
               info@devstudio.com</a
             >
           </li>
-          <li class="list-item">
+          <li class="contacts-item">
             <a href="tel:+110001111111" class="contacts-link link"
               >+11 (000) 111-11-11</a
             >
           </li>
         </ul>
+      </div>
+
+      <!------------------Mobile-menu--------------- -->
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-container">
+          <button type="button" class="close-btn" data-menu-close>
+            <svg class="close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link link active"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./portfolio.html" class="mobile-menu-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts-item">
+              <a href="tel:+110001111111" class="mobile-menu-tel link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-contacts-item">
+              <a href="mailto:info@devstudio.com" class="mobile-menu-mail link">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-socials list">
+            <li class="mobile-menu-socials-list">
+              <a
+                href=""
+                class="social-link icon-social-link"
+                aria-label="Instagram"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+              >
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-list">
+              <a
+                href=""
+                class="social-link icon-social-link"
+                aria-label="Twitter"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+              >
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-list">
+              <a
+                href=""
+                class="social-link icon-social-link"
+                aria-label="Facebook"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+              >
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-list">
+              <a
+                href=""
+                class="social-link icon-social-link"
+                aria-label="Linkedin"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+              >
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -91,7 +191,9 @@
                   </div>
                 </div>
                 <div class="card-discription">
-                  <h2 class="list-title">Banking App Interface Concept</h2>
+                  <h2 class="card-list-title list-title">
+                    Banking App Interface Concept
+                  </h2>
                   <p class="portfolio-card-text">App</p>
                 </div>
               </a>
@@ -113,7 +215,7 @@
                   </div>
                 </div>
                 <div class="card-discription">
-                  <h2 class="list-title">Cashless Payment</h2>
+                  <h2 class="card-list-title list-title">Cashless Payment</h2>
                   <p class="portfolio-card-text">Marketing</p>
                 </div>
               </a>
@@ -135,7 +237,7 @@
                   </div>
                 </div>
                 <div class="card-discription">
-                  <h2 class="list-title">Meditaion App</h2>
+                  <h2 class="card-list-title list-title">Meditaion App</h2>
                   <p class="portfolio-card-text">App</p>
                 </div>
               </a>
@@ -157,7 +259,7 @@
                   </div>
                 </div>
                 <div class="card-discription">
-                  <h2 class="list-title">Taxi Service</h2>
+                  <h2 class="card-list-title list-title">Taxi Service</h2>
                   <p class="portfolio-card-text">Marketing</p>
                 </div>
               </a>
@@ -179,7 +281,9 @@
                   </div>
                 </div>
                 <div class="card-discription">
-                  <h2 class="list-title">Screen Illustrations</h2>
+                  <h2 class="card-list-title list-title">
+                    Screen Illustrations
+                  </h2>
                   <p class="portfolio-card-text">Design</p>
                 </div>
               </a>
@@ -201,7 +305,7 @@
                   </div>
                 </div>
                 <div class="card-discription">
-                  <h2 class="list-title">Online Courses</h2>
+                  <h2 class="card-list-title list-title">Online Courses</h2>
                   <p class="portfolio-card-text">Marketing</p>
                 </div>
               </a>
@@ -223,7 +327,9 @@
                   </div>
                 </div>
                 <div class="card-discription">
-                  <h2 class="list-title">Instagram Stories Concept</h2>
+                  <h2 class="card-list-title list-title">
+                    Instagram Stories Concept
+                  </h2>
                   <p class="portfolio-card-text">Design</p>
                 </div>
               </a>
@@ -245,7 +351,7 @@
                   </div>
                 </div>
                 <div class="card-discription">
-                  <h2 class="list-title">Organic Food</h2>
+                  <h2 class="card-list-title list-title">Organic Food</h2>
                   <p class="portfolio-card-text">Web Site</p>
                 </div>
               </a>
@@ -267,7 +373,7 @@
                   </div>
                 </div>
                 <div class="card-discription">
-                  <h2 class="list-title">Fresh Coffee</h2>
+                  <h2 class="card-list-title list-title">Fresh Coffee</h2>
                   <p class="portfolio-card-text">Web Site</p>
                 </div>
               </a>
@@ -276,74 +382,77 @@
         </div>
       </section>
     </main>
-    <footer class="footer background">
+    <footer class="footer background section">
       <div class="container footer-container">
-        <div class="footer-logo">
-          <a href="./index.html" class="logo"><span>web</span>studio</a>
+        <div class="footer-center">
+          <div class="footer-logo">
+            <a href="./index.html" class="logo"><span>web</span>studio</a>
 
-          <p class="footer-logo-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing &amp; growth solutions.
-          </p>
+            <p class="footer-logo-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing &amp; growth solutions.
+            </p>
+          </div>
+          <div class="footer-socials">
+            <p class="footer-title">Social media</p>
+            <ul class="socials list">
+              <li class="footer-socials-list">
+                <a
+                  href=""
+                  class="social-link footer-socials-link"
+                  aria-label="Instagram"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                >
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-list">
+                <a
+                  href=""
+                  class="social-link footer-socials-link"
+                  aria-label="Twitter"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                >
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-list">
+                <a
+                  href=""
+                  class="social-link footer-socials-link"
+                  aria-label="Facebook"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                >
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-list">
+                <a
+                  href=""
+                  class="social-link footer-socials-link"
+                  aria-label="Linkedin"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                >
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-socials">
-          <p class="footer-title">Social media</p>
-          <ul class="socials list">
-            <li class="footer-socials-list">
-              <a
-                href=""
-                class="social-link footer-socials-link"
-                aria-label="Instagram"
-                rel="noopener noreferrer nofollow"
-                target="_blank"
-              >
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials-list">
-              <a
-                href=""
-                class="social-link footer-socials-link"
-                aria-label="Twitter"
-                rel="noopener noreferrer nofollow"
-                target="_blank"
-              >
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials-list">
-              <a
-                href=""
-                class="social-link footer-socials-link"
-                aria-label="Facebook"
-                rel="noopener noreferrer nofollow"
-                target="_blank"
-              >
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials-list">
-              <a
-                href=""
-                class="social-link footer-socials-link"
-                aria-label="Linkedin"
-                rel="noopener noreferrer nofollow"
-                target="_blank"
-              >
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form action="" class="footer-form" autocomplete="off">
+
+        <form class="footer-form" autocomplete="off">
           <p class="footer-title">Subscribe</p>
 
           <div class="footer-form-wrap">
