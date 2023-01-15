@@ -798,6 +798,10 @@ img {
 /* ---------Media: max-width: 767px------------- */
 
 @media screen and (max-width: 767px) {
+  body.menu-open {
+    overflow: hidden;
+  }
+
   /*-------------------Header------------ */
 
   .header-page {
@@ -992,6 +996,20 @@ img {
   .button.secondary {
     padding: 8px 16px;
   }
+
+  /* .portfolio-card-item {
+    width: 396px;
+  } */
+
+  .portfolio-card-item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+
+  .portfolio-card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /* ----------------Max-width: 415px--------------- */
 
@@ -1024,12 +1042,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
-
-  /* ---------------Mobile menu----------- */
-
-  .mobile-menu {
-    width: 480px;
-  }
 }
 
 /* --------------TABLET------------ */
@@ -1037,6 +1049,17 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 766px;
+  }
+
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-set-gap);
+    row-gap: 64px;
+  }
+
+  .card-item {
+    width: calc((100% - 24px) / 2);
   }
 
   .mobile-menu {
@@ -1159,17 +1182,6 @@ img {
     display: none;
   }
 
-  .card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--card-set-gap);
-    row-gap: 64px;
-  }
-
-  .card-item {
-    width: calc((100% - 24px) / 2);
-  }
-
   .benefits-list-title {
     text-align: start;
   }
@@ -1238,6 +1250,14 @@ img {
     width: 1158px;
   }
 
+  .card-set {
+    row-gap: 48px;
+  }
+
+  .card-item {
+    width: calc((100% - 48px) / 3);
+  }
+
   /* ---------------Header-------------- */
 
   .logo {
@@ -1295,7 +1315,7 @@ img {
     padding-bottom: 120px;
   }
 
-  .card-item {
+  .benefits-item {
     width: calc((100% - 72px) / 4);
   }
 
@@ -1329,6 +1349,12 @@ img {
   .work-item {
     width: calc((100% - 48px) / 3);
     border: 1px solid #e7e9fc;
+  }
+
+  /* --------------Our team------------ */
+
+  .team-item {
+    width: calc((100% - 72px) / 4);
   }
 
   /* ------------Customers----------- */

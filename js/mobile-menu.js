@@ -9,6 +9,7 @@
   refs.closeMenuBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
+    document.body.classList.toggle("menu-open");
     refs.menu.classList.toggle("is-open");
   }
 })();
