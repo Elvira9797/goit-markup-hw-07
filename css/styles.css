@@ -854,6 +854,10 @@ img {
   }
 
   .mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
     padding-top: 80px;
     padding-right: 40px;
     padding-bottom: 40px;
@@ -875,10 +879,6 @@ img {
   }
 
   /* ---------------Mobile-menu-content------------- */
-
-  .mobile-menu-nav {
-    margin-bottom: 284px;
-  }
 
   .mobile-menu-item:not(:last-child) {
     margin-bottom: 40px;
@@ -926,7 +926,7 @@ img {
     margin-bottom: 48px;
   }
 
-  /* -----------------Mobile benefits 767px--------------- */
+  /* -----------------Mobile benefits--------------- */
 
   .benefits-icon {
     display: none;
@@ -996,10 +996,6 @@ img {
   .button.secondary {
     padding: 8px 16px;
   }
-
-  /* .portfolio-card-item {
-    width: 396px;
-  } */
 
   .portfolio-card-item:not(:last-child) {
     margin-bottom: 48px;
