@@ -645,10 +645,6 @@ img {
 
 /* --------------Footer social media---------------- */
 
-.footer-socials {
-  margin-bottom: 72px;
-}
-
 .footer-title {
   font-weight: 500;
   line-height: 1.5;
@@ -857,7 +853,7 @@ img {
   .mobile-menu-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 796px;
     justify-content: space-between;
     padding-top: 80px;
     padding-right: 40px;
@@ -883,6 +879,10 @@ img {
 
   .mobile-menu-item:not(:last-child) {
     margin-bottom: 40px;
+  }
+
+  .mobile-menu-link.active {
+    color: var(--primary-button-hover);
   }
 
   .mobile-menu-link {
@@ -937,6 +937,12 @@ img {
     margin-bottom: 72px;
   }
 
+  .benefits-text {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
   /* ----------------What are we doing--------------- */
 
   .works {
@@ -960,6 +966,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    row-gap: 72px;
   }
 
   .customers-list {
@@ -967,6 +974,10 @@ img {
   }
 
   /* -----------------Footer------------- */
+
+  .footer-socials {
+    margin-bottom: 72px;
+  }
 
   .footer-container {
     flex-direction: column;
@@ -1030,14 +1041,6 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-  }
-
-  /*----------------Mobile benefits 480px-------- */
-
-  .benefits-text {
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
   }
 }
 
@@ -1131,10 +1134,15 @@ img {
   .contacts-link {
     color: var(--primary-text-color);
     text-decoration: none;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
 
     transition: color var(--duration) var(--timing-function);
+  }
+
+  .contacts-item:first-child {
+    margin-bottom: 4px;
   }
 
   .contacts-link:hover,
@@ -1216,6 +1224,10 @@ img {
     .footer-container {
       padding-left: 108px;
       flex-wrap: wrap;
+    }
+
+    .footer-form {
+      margin-top: 72px;
     }
   }
 
