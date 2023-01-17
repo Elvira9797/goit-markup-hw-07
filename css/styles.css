@@ -937,10 +937,8 @@ img {
     margin-bottom: 72px;
   }
 
-  .benefits-text {
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  .footer-socials {
+    margin-bottom: 72px;
   }
 
   /* ----------------What are we doing--------------- */
@@ -1141,10 +1139,6 @@ img {
     transition: color var(--duration) var(--timing-function);
   }
 
-  .contacts-item:first-child {
-    margin-bottom: 4px;
-  }
-
   .contacts-link:hover,
   .contacts-link:focus {
     color: var(--primary-button-hover);
@@ -1229,6 +1223,10 @@ img {
     .footer-form {
       margin-top: 72px;
     }
+
+    .contacts-item:first-child {
+      margin-bottom: 4px;
+    }
   }
 
   .footer-center {
@@ -1275,6 +1273,12 @@ img {
 
   .contacts {
     display: flex;
+  }
+
+  .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .contacts-item:not(:last-child) {
