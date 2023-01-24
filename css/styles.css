@@ -211,6 +211,7 @@ img {
   height: 40px;
   font-size: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: transparent;
   color: var(--primary-text-color);
   border-radius: 4px;
   padding-left: 38px;
@@ -244,6 +245,7 @@ img {
   height: 120px;
   font-size: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: transparent;
   border-radius: 4px;
   padding: 8px 16px;
   outline: none;
@@ -1058,15 +1060,14 @@ img {
     width: 766px;
   }
 
+  .container-tablet {
+    width: 582px;
+  }
+
   .card-set {
     display: flex;
     flex-wrap: wrap;
     gap: var(--card-set-gap);
-    row-gap: 64px;
-  }
-
-  .card-item {
-    width: calc((100% - 24px) / 2);
   }
 
   .mobile-menu {
@@ -1194,6 +1195,14 @@ img {
     text-align: start;
   }
 
+  .benefits-list {
+    row-gap: 72px;
+  }
+
+  .benefits-item {
+    width: calc((100% - 24px) / 2);
+  }
+
   /* ------------What are we doing----------- */
 
   .works {
@@ -1203,18 +1212,13 @@ img {
   /* ------------Our team----------------- */
 
   .team-list {
-    justify-content: center;
-  }
-
-  .team-item {
-    width: 264px;
+    row-gap: 64px;
   }
 
   /* -----------------Customers-------------- */
 
   .customer-card-list {
     row-gap: 72px;
-    justify-content: center;
   }
 
   .customers-list {
@@ -1225,7 +1229,6 @@ img {
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     .footer-container {
-      padding-left: 108px;
       flex-wrap: wrap;
     }
 
