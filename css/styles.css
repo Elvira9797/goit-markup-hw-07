@@ -1260,6 +1260,10 @@ img {
     padding-top: 64px;
     padding-bottom: 96px;
   }
+
+  .portfolio-card-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 /* --------------DESCTOP------------ */
